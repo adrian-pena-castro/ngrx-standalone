@@ -1,0 +1,35 @@
+<section class="mt-24">
+  <div
+    class="p-3 text-xl text-center text-red-900 bg-red-300"
+    *ngIf="error$ | async"
+  >
+    <p>Inicio de sesión incorrecto</p>
+  </div>
+  <div
+    class="flex flex-col items-center bg-blue-100 border-2 border-gray-200 border-solid w-96 h-96"
+  >
+    <div class="pt-6 text-3xl font-bold">
+      <p>Iniciar sesión</p>
+    </div>
+    <form [formGroup]="form">
+      <div class="flex flex-col pt-8 w-60">
+        <label class="pb-2 font-bold">Usuario</label>
+        <input class="w-full h-9" formControlName="email" type="text" />
+      </div>
+      <div class="flex flex-col pt-8 w-60">
+        <label class="pb-2 font-bold">Contraseña</label>
+        <input class="w-full h-9" formControlName="password" type="password" />
+      </div>
+    </form>
+    <div class="flex-grow"></div>
+    <div class="pb-5">
+      <button
+        (click)="sendLogin()"
+        [disabled]="!form.valid"
+        class="h-12 text-xl font-bold text-white bg-red-600 w-60 active:bg-slate-700 hover:bg-red-800 disabled:bg-gray-500"
+      >
+        Entrar
+      </button>
+    </div>
+  </div>
+</section>

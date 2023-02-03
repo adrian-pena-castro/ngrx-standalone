@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$5zBvCPvKIpFM3xxRy79auOmL/VtrCrE5usXMFMEbIwGQsT/OLvscO",
+      "id": 1
+    },
+    {
+      "email": "macario@ouyeah.es",
+      "password": "$2a$10$9n9Y10LVcp4u0ZqgfAB.0OXoePjRu5Lj2rBfIaiALM/VF0T3WuDLK",
+      "id": 2
+    }
+  ],
+  "users-profile": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$5zBvCPvKIpFM3xxRy79auOmL/VtrCrE5usXMFMEbIwGQsT/OLvscO",
+      "name": "Olivier",
+      "surname1": "De los dolores",
+      "surname2": "Martínez",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWNlYzczNjItMjRlZi00MjE3LWJlYzctYzcyYTlkM2U5YzMzXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg",
+      "id": 1
+    },
+    {
+      "email": "macario@ouyeah.es",
+      "password": "$2a$10$9n9Y10LVcp4u0ZqgfAB.0OXoePjRu5Lj2rBfIaiALM/VF0T3WuDLK",
+      "name": "Macario",
+      "surname1": "Pérez",
+      "surname2": "Sánchez",
+      "image": "https://www.terra.cl/u/fotografias/m/2021/7/30/f638x638-13926_72093_5050.jpg",
+      "id": 2
+    }
+  ],
+  "lost": [
+    {
+      "id": 1,
+      "name": "Joaquín Sánchez Rodríguez",
+      "playerName": "Joaquín",
+      "birthDate": "21/07/1981",
+      "image": "https://www.bdfutbol.com/i/j/1288h.jpg",
+      "lostMatches": 204
+    },
+    {
+      "id": 2,
+      "name": "Jose Ramón Esnaola Larburu",
+      "playerName": "Esnaola",
+      "birthDate": "30/06/1946",
+      "image": "https://www.bdfutbol.com/i/j/3516.jpg",
+      "lostMatches": 178
+    },
+    {
+      "id": 3,
+      "name": "Raúl García Escudero",
+      "playerName": "Raúl García",
+      "birthDate": "11/07/1986",
+      "image": "https://www.bdfutbol.com/i/j/2294i.jpg",
+      "lostMatches": 175
+    },
+    {
+      "id": 4,
+      "name": "Francisco Puñal Martínez",
+      "playerName": "Puñal",
+      "birthDate": "06/09/1975",
+      "image": "https://www.bdfutbol.com/i/j/831e.jpg",
+      "lostMatches": 174
+    },
+    {
+      "id": 5,
+      "name": "Raúl Tamudo Montero",
+      "playerName": "Tamudo",
+      "birthDate": "19/10/1977",
+      "image": "https://www.bdfutbol.com/i/j/2312.jpg",
+      "lostMatches": 173
+    }
+  ]
+}

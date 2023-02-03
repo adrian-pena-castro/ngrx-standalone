@@ -22,7 +22,12 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ngrx-example/features/*" : ["src/app/features/*"],
+      "@ngrx-example/models/*" : ["src/app/core/models/*"],
+      "@ngrx-example/shared/*" : ["src/app/shared/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
