@@ -74,16 +74,18 @@ bootstrapApplication(AppComponent, {
 });
 ```
 
-O por el contrario, podemos utilizar las nuevas funciones standalone de NgRx que nos permiten cargar las dependencias sin necesidad de usar módulos.
+O por el contrario, podemos utilizar las nuevas funciones standalone que nos permiten cargar las dependencias sin necesidad de usar módulos. Estas son algunas de las que tenemos disponibles:
 
 - provideStore() --> StoreModule.forRoot({})
 - provideEffects() --> EffectsModule.forRoot({})
 - provideStoreDevtools() --> StoreDevtoolsModule.instrument()
+- provideRouter() --> RouterModule.forRoot({})
 
 ```javascript
 bootstrapApplication(AppComponent, {
   providers: [
-    importProvidersFrom(HttpClientModule, RouterModule.forRoot(routes)),
+    importProvidersFrom(HttpClientModule),
+    provideRouter(routes),
     provideStore(),
     provideEffects({}),
     provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),
