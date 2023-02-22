@@ -247,7 +247,7 @@ Si introducimos email y contraseña y pulsamos "Enter" veremos que se lanza la a
 
 Si introducimos valores de usuario válidos:
 
-- email: macario@ouyeah.es
+- email: usuario@prueba.es
 - password: patata
 
 Vemos que se lanza la acción "Login User Success". Sin embargo, una vez logueado seguimos estando en la misma pantalla. ¿Cómo podemos hacer para que cuando el login sea exitoso la aplicación navegue a la home? La respuesta es creando un nuevo efecto.
