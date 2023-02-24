@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormBuilder,
@@ -21,6 +21,7 @@ import * as AuthSelectors from '@ngrx-example/shared/auth/state/auth.selectors';
   ],
   templateUrl: './login-container.component.html',
   styleUrls: ['./login-container.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginContainerComponent {
   form: FormGroup = this.formBuilder.group({
